@@ -9,23 +9,22 @@ export const common = StyleSheet.create({
     justifyContent: "center",
     padding: 16,
   },
+  screenScroll: {
+    flex: 1,
+    backgroundColor: colors.bg,
+  },
+  screenContent: {
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 24,
+  },
   inner: {
     width: "100%",
     maxWidth: 448,
     alignSelf: "center",
   },
 
-  // Card
-  card: {
-    backgroundColor: colors.card,
-    borderRadius: 16,
-    padding: 32,
-    borderWidth: 1,
-    borderColor: colors.border,
-    gap: 24,
-  },
-
-  // Page header
+  // Page header (auth screens)
   pageHeader: {
     alignItems: "center",
     marginBottom: 32,
@@ -39,6 +38,44 @@ export const common = StyleSheet.create({
   pageSubtitle: {
     fontSize: 15,
     color: colors.subtle,
+  },
+
+  // Logo bar (tab screens)
+  topBar: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 12,
+  },
+  logo: {
+    fontSize: 22,
+    fontWeight: "900",
+    color: colors.text,
+    letterSpacing: -0.5,
+  },
+  logoDot: {
+    color: colors.primary,
+  },
+
+  // Section label (monospace caps)
+  sectionLabel: {
+    fontSize: 10,
+    color: colors.muted,
+    fontFamily: "monospace",
+    letterSpacing: 2,
+    textTransform: "uppercase",
+  },
+
+  // Card
+  card: {
+    backgroundColor: colors.card,
+    borderRadius: 16,
+    padding: 32,
+    borderWidth: 1,
+    borderColor: colors.border,
+    gap: 24,
   },
 
   // Form fields
